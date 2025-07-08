@@ -5,18 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Issam</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="C:\Users\iaissaouiidrissi\OneDrive - ALTEN Group\Portflio\styles\style.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <nav>
-    <a href="#about">À propos</a>
-    <a href="#experience">Expériences</a>
-    <a href="#projects">Projets</a>
-    <a href="#education">Éducation</a>
-    <a href="#contact">Contact</a>
-    <a href="CV ISSAM 2025 (1).pdf" target="_blank">📄 Télécharger mon CV</a>
+    <div>
+      <a href="CV ISSAM 2025 (1).pdf" target="_blank" style="background-color: #1e90ff; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; text-decoration: none;">
+        📄 Télécharger mon CV
+      </a>
+    </div>
+  
+    <!-- Liens centraux -->
+    <div style="display: flex; gap: 15px; justify-content: center; flex: 1;">
+      <a href="#about">À propos</a>
+      <a href="#experience">Expériences</a>
+      <a href="#projects">Projets</a>
+      <a href="#education">Éducation</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
+  
 
   <header>
     <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 40px;">
@@ -28,8 +37,8 @@
         <div style="margin-top: 20px;">
           <p>📧 <a href="mailto:issam.aissaoui87@gmail.com">issam.aissaoui87@gmail.com</a></p>
           <p>📞 <a href="tel:+212618936313">+212 618 936 313</a></p>
-          <a href="https://github.com/IssamIdri" target="_blank" style="margin-right: 10px;">GitHub</a>
-          <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/IssamIdri" target="_blank" style="margin-right: 10px;"><img src="github.png" alt="Logo GitHub" /></a>
+          <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/" target="_blank"><img src="linkedin.png" alt="Logo LinkedIn" /></a>
         </div>
         <div style="margin-top: 20px;">
           <a href="#experience" class="btn" style="padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">🔍 Voir Expériences</a>
@@ -50,54 +59,53 @@
 
   <section id="experience">
     <h2>Expériences</h2>
-    <div style="display: flex; flex-direction: column; gap: 30px;">
-      <div style="background: #2a2a2a; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
-        <div style="flex: 1;">
-
-        <h3 style="color: #ffffff; margin-bottom: 5px;">ALTEN Delivry Center</h3>
-        <p style="margin: 0; color: #00bfff; font-weight: 500;">Stage Ingénieur en Data Science & Intelligence Artificielle · Fès</p>
-        <p style="margin: 5px 0; color: #ccc;"><strong>Février – Août 2025</strong></p>
-        <ul style="margin-top: 10px; padding-left: 20px;">
-          <li>DÉVELOPPEMENT PYTHON ET AUTOMATISATION DU TRAITEMENT DES TICKETS</li>
-          <li>EXPÉRIMENTATION DE MODÈLES DE TRAITEMENT DU LANGAGE NATUREL (NLP)</li>
+  
+    <div class="experience-item">
+      <div>
+        <h3>ALTEN Delivery Center</h3>
+        <p><strong>Stage Ingénieur en Data Science & Intelligence Artificielle · Fès</strong></p>
+        <p>Février – Août 2025</p>
+        <ul>
+          <li>Développement Python et automatisation du traitement des tickets</li>
+          <li>Expérimentation de modèles de traitement du langage naturel (NLP)</li>
         </ul>
       </div>
-      <div style="min-width: 60px;">
-        <img src='alten.jpg' alt="Logo entreprise" style="width: 200px; height: auto; border-radius: 6px;" />
+      <div class="experience-logo">
+        <img src="alten.jpg" alt="Logo Alten">
       </div>
-      </div>
-    <div style="display: flex; flex-direction: column; gap: 30px;">
-      <div style="background: #2a2a2a; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
-        <div style="flex: 1;">
-        <h3 style="color: #ffffff; margin-bottom: 5px;">NARJISS SOFT</h3>
-        <p style="margin: 0; color: #00bfff; font-weight: 500;">Stage Technicien Réseau · Fès</p>
-        <p style="margin: 5px 0; color: #ccc;"><strong>Juillet – Août 2024</strong></p>
-        <ul style="margin-top: 10px; padding-left: 20px;">
+    </div>
+  
+    <div class="experience-item">
+      <div>
+        <h3>NARJISS SOFT</h3>
+        <p><strong>Stage Technicien Réseau · Fès</strong></p>
+        <p>Juillet – Août 2024</p>
+        <ul>
           <li>Installation et configuration de réseaux informatiques</li>
           <li>Maintenance et entretien d’infrastructure réseau</li>
         </ul>
       </div>
-      <div style="min-width: 60px;">
-        <img src='narjiss.jpeg' alt="Logo entreprise" style="width: 200px; height: auto; border-radius: 6px;" />
+      <div class="experience-logo">
+        <img src="narjiss.jpeg" alt="Logo Narjiss Soft">
       </div>
-      </div>
-      <div style="background: #2a2a2a; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
-        <div style="flex: 1;">
-        <h3 style="color: #ffffff; margin-bottom: 5px;">EST Fès</h3>
-        <p style="margin: 0; color: #00bfff; font-weight: 500;">Stage de Fin d’Études · Fès</p>
-        <p style="margin: 5px 0; color: #ccc;"><strong>Avril – Juin 2020</strong></p>
-        <ul style="margin-top: 10px; padding-left: 20px;">
+    </div>
+  
+    <div class="experience-item">
+      <div>
+        <h3>EST Fès</h3>
+        <p><strong>Stage de Fin d’Études · Fès</strong></p>
+        <p>Avril – Juin 2020</p>
+        <ul>
           <li>Gestion de salles informatiques via NetSupport School</li>
           <li>Administration réseau et routage inter-VLAN</li>
         </ul>
       </div>
-      <div style="min-width: 60px;">
-        <img src='EST.png' alt="Logo entreprise" style="width: 200px; height: auto; border-radius: 6px;" />
-      </div>
+      <div class="experience-logo">
+        <img src="EST.png" alt="Logo EST">
       </div>
     </div>
   </section>
-
+  
   <section id="projects">
     <h2>Projets</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
@@ -234,7 +242,7 @@
   
       <!-- Formulaire -->
       <div style="flex: 1; min-width: 300px;">
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/mwkglbqe" method="POST">
           <div style="margin-bottom: 15px;">
             <label for="name">Nom & Prénom :</label><br>
             <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; border-radius: 5px; border: none;">
