@@ -5,98 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Issam</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background-color: #1c1c1c;
-      color: #f0f0f0;
-      scroll-behavior: smooth;
-    }
-    header {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9));
-}
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
-  z-index: -2;
-  animation: zoomEffect 20s ease-in-out infinite alternate;
-  filter: brightness(0.5);
-}
-@keyframes zoomEffect {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.1); }
-}
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 10px 0 20px;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.8);
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      z-index: 1000;
-    }
-    nav a {
-      color: #f0f0f0;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #1e90ff;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-      color: #1e90ff;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
-      color: #1e90ff;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9em;
-      background: #111;
-    }
-  </style>
+  <link rel="stylesheet" href="C:\Users\iaissaouiidrissi\OneDrive - ALTEN Group\Portflio\styles\style.css">
+
 </head>
 <body>
   <nav>
@@ -104,8 +14,8 @@ header::before {
     <a href="#experience">Expériences</a>
     <a href="#projects">Projets</a>
     <a href="#education">Éducation</a>
-    <a href="#certifications">Certifications</a>
     <a href="#contact">Contact</a>
+    <a href="CV ISSAM 2025 (1).pdf" target="_blank">📄 Télécharger mon CV</a>
   </nav>
 
   <header>
@@ -119,7 +29,7 @@ header::before {
           <p>📧 <a href="mailto:issam.aissaoui87@gmail.com">issam.aissaoui87@gmail.com</a></p>
           <p>📞 <a href="tel:+212618936313">+212 618 936 313</a></p>
           <a href="https://github.com/IssamIdri" target="_blank" style="margin-right: 10px;">GitHub</a>
-          <a href="https://linkedin.com/in/issam" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/" target="_blank">LinkedIn</a>
         </div>
         <div style="margin-top: 20px;">
           <a href="#experience" class="btn" style="padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">🔍 Voir Expériences</a>
@@ -168,7 +78,7 @@ header::before {
         </ul>
       </div>
       <div style="min-width: 60px;">
-        <img src='alten.jpg' alt="Logo entreprise" style="width: 200px; height: auto; border-radius: 6px;" />
+        <img src='narjiss.jpeg' alt="Logo entreprise" style="width: 200px; height: auto; border-radius: 6px;" />
       </div>
       </div>
       <div style="background: #2a2a2a; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
@@ -203,7 +113,8 @@ header::before {
         <img src="cancer.png" alt="Cancer" style="width: 100%; border-radius: 10px;">
         <h3>SEED Breast Cancer Prédiction Application</h3>
       </div>
-      
+    </div>
+  </div>
     <div id="modal-fraude" class="modal">
       <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
         <span class="close" onclick="closeModal('modal-fraude')">&times;</span>
@@ -215,12 +126,16 @@ header::before {
           <li>🌲 Modélisation supervisée : Random Forest avec ajustement des hyperparamètres.</li>
           <li>✅ Évaluation : Accuracy, Recall, Precision, F1-Score, matrice de confusion, courbe ROC.</li>
         </ul>
-        <div><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">MySQL</span></div>
+        <div class="tag-group">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">MySQL</span>
+        </div>
       </div>
-  
+    </div>
     <!-- Modal Cancer -->
     <div id="modal-cancer" class="modal">
-      <div class="modal-content">
+      <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
         <span class="close" onclick="closeModal('modal-cancer')">&times;</span>
         <h3>SEED Breast Cancer Prédiction Application</h3>
         <p>Nous avons développé SEED Breast Cancer Prediction, une application innovante basée sur des technologies modernes d’intelligence artificielle et d’apprentissage automatique, visant à prédire le risque de cancer du sein ou à détecter des cas potentiels.</p>
@@ -230,7 +145,11 @@ header::before {
           <li>📌 Offrir une solution accessible, intégrable dans divers environnements médicaux</li>
         </ul>
         <p>Ce projet reflète notre engagement à utiliser l’intelligence artificielle pour des applications ayant un impact positif sur la société, notamment dans le domaine de la santé.</p>
-        <div><span class="tag">Flask</span><span class="tag">Machine Learning</span><span class="tag">IA</span><span class="tag">Data Science</span></div>
+        <div class="tag-group">
+          <span class="tag">Flask</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">IA</span>
+          <span class="tag">Data Science</span></div>
       </div>
     </div>
   
@@ -245,59 +164,14 @@ header::before {
           <li>🧰 Étude de la topologie, des contraintes et de la sécurité</li>
           <li>⚙️ Mise en œuvre d’un plan de conception et de déploiement</li>
         </ul>
-        <div><span class="tag">Python</span><span class="tag">Sklearn</span><span class="tag">Pandas</span></div>
+        <div class="tag-group">
+          <span class="tag">Python</span>
+          <span class="tag">Sklearn</span>
+          <span class="tag">Pandas</span>
+        </div>
       </div>
     </div>
-  
-    <style>
-      .project-card {
-        background: #2a2a2a;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        cursor: pointer;
-        transition: transform 0.3s ease;
-      }
-      .project-card:hover {
-        transform: scale(1.02);
-      }
-      .project-card h3 {
-        color: #1e90ff;
-      }
-      .project-card .tag {
-        background: #444;
-        color: #ccc;
-        padding: 4px 8px;
-        margin: 3px;
-        border-radius: 5px;
-        display: inline-block;
-        font-size: 0.8em;
-      }
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-color: rgba(0,0,0,0.8);
-        justify-content: center;
-        align-items: center;
-      }
-      .modal-content {
-        background: #1c1c1c;
-        padding: 30px;
-        border-radius: 12px;
-        width: 90%; max-width: 600px;
-        color: #fff;
-        text-align: left;
-      }
-      .close {
-        float: right;
-        font-size: 28px;
-        color: #ccc;
-        cursor: pointer;
-      }
-    </style>
+
   
     <script>
       function openModal(id) {
@@ -310,34 +184,75 @@ header::before {
   </section>
   
   
-  
-
 
   <section id="education">
-    
     <h2>Éducation</h2>
-    <ul>
-      <li>Ingénieur en Conception Mécanique – FST Fès</li>
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>MATLAB Fundamentals – MathWorks</li>
-      <li>Formation IA – OpenClassrooms</li>
-    </ul>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1000px; position: relative;">
+  
+        <div style="flex: 1; min-width: 300px; padding: 20px; text-align: right;">
+          <img src="esisa.jpg" alt="FSDM" style="width: 80px; border-radius: 10px; margin-bottom: 10px;">
+          <h4 style="margin: 0; color: #1e90ff;">2023 – 2025</h4>
+          <p style="margin: 5px 0;">Master en Ingénierie des Systèmes d’Information et Intelligence Artificielle – FSDM, Fès</p>
+        </div>
+  
+        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: #1e90ff; margin-left: -1px;"></div>
+  
+        <div style="flex: 1; min-width: 300px; padding: 20px;">
+          <img src="fsdm.png" alt="FSDM" style="width: 80px; border-radius: 10px; margin-bottom: 10px;">
+          <h4 style="margin: 0; color: #1e90ff;">2020 – 2023</h4>
+          <p style="margin: 5px 0;">Licence Fondamentale en Mathématiques et Informatique – FSDM, Fès</p>
+        </div>
+  
+        <div style="flex: 1; min-width: 300px; padding: 20px; text-align: right;">
+          <img src="est.png" alt="EST" style="width: 80px; border-radius: 10px; margin-bottom: 10px;">
+          <h4 style="margin: 0; color: #1e90ff;">2018 – 2020</h4>
+          <p style="margin: 5px 0;">DUT Réseaux et Télécommunications – EST, Fès</p>
+        </div>
+  
+        <div style="flex: 1; min-width: 300px; padding: 20px;">
+          <img src="md.jpg" alt="Lycée Moulay Driss" style="width: 80px; border-radius: 10px; margin-bottom: 10px;">
+          <h4 style="margin: 0; color: #1e90ff;">2017 – 2018</h4>
+          <p style="margin: 5px 0;">Baccalauréat Sciences Mathématiques B – Lycée Moulay Driss, Fès</p>
+        </div>
+  
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <ul>
-      <li>Email : issam.email@gmail.com</li>
-      <li>LinkedIn : <a href="#">linkedin.com/in/issam</a></li>
-      <li>GitHub : <a href="#">github.com/issamdev</a></li>
-      <li><a href="CV ISSAM 2025 (1).pdf" target="_blank">📄 Télécharger mon CV</a></li>
-    </ul>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+      <!-- Coordonnées -->
+      <div style="flex: 1; min-width: 280px;">
+        <ul>
+          <li><strong>Email :</strong> <a href="mailto:issam.email@gmail.com">issam.email@gmail.com</a></li>
+          <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/">AISSAOUI ISRISSI ISSAM</a></li>
+          <li><strong>GitHub :</strong> <a href="https://github.com/IssamIdri">IssamIdri</a></li>
+        </ul>
+      </div>
+  
+      <!-- Formulaire -->
+      <div style="flex: 1; min-width: 300px;">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <div style="margin-bottom: 15px;">
+            <label for="name">Nom & Prénom :</label><br>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; border-radius: 5px; border: none;">
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border-radius: 5px; border: none;">
+          </div>
+          <div style="margin-bottom: 15px;">
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px; border-radius: 5px; border: none;"></textarea>
+          </div>
+          <button type="submit" style="background-color: #1e90ff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Envoyer</button>
+        </form>
+      </div>
+    </div>
   </section>
+  
 
   <footer>
     &copy; 2025 AISSAOUI IDRISSI ISSAM -- Tous droits réservés.
