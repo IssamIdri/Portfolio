@@ -6,18 +6,12 @@
   <title>Portfolio Issam</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="icon" type="image/png" href="information.png" />
 </head>
 <body>
   <nav>
+    <a href="CV ISSAM 2025 (1).pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
     <div>
-      <a href="CV ISSAM 2025 (1).pdf" target="_blank" style="background-color: #1e90ff; color: white; padding: 8px 16px; border-radius: 5px; font-weight: bold; text-decoration: none;">
-        📄 Télécharger mon CV
-      </a>
-    </div>
-  
-    <!-- Liens centraux -->
-    <div style="display: flex; gap: 15px; justify-content: center; flex: 1;">
       <a href="#about">À propos</a>
       <a href="#experience">Expériences</a>
       <a href="#projects">Projets</a>
@@ -26,30 +20,34 @@
     </div>
   </nav>
   
+  
 
   <header>
-    <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; padding: 40px;">
-      <div style="max-width: 500px; text-align: left;">
-        <p style="color: #1e90ff; font-weight: 600; margin: 0;">Bonjour, Je suis</p>
-        <h1 style="font-size: 2.8em; color: #fff; margin: 5px 0;">AISSAOUI IDRISSI Issam</h1>
-        <h2 style="font-size: 2em; color: #00bfff; margin-top: 0;">Ingénieur en Systèmes d'Information & IA</h2>
-        <p style="margin-top: 15px; font-size: 1em; color: #ccc;">Détenteur d’un Master en Ingénierie des Systèmes d’Information et Intelligence Artificielle, je suis passionné par l’analyse prédictive, la gestion de données massives et le développement d’applications intelligentes. Mon parcours allie solides compétences en data science, développement full-stack et réseaux, que je mets au service de projets innovants mêlant IA, modélisation et automatisation..</p>
-        <div style="margin-top: 20px;">
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="intro">Bonjour, Je suis</p>
+        <h1 class="name">AISSAOUI IDRISSI Issam</h1>
+        <h2 class="title">Ingénieur en Systèmes d'Information & IA</h2>
+        <p class="description">
+          Détenteur d’un Master en Ingénierie des Systèmes d’Information et Intelligence Artificielle, je suis passionné par l’analyse prédictive, la gestion de données massives et le développement d’applications intelligentes. Mon parcours allie solides compétences en data science, développement full-stack et réseaux, que je mets au service de projets innovants mêlant IA, modélisation et automatisation.
+        </p>
+        <div class="contact-links">
           <p>📧 <a href="mailto:issam.aissaoui87@gmail.com">issam.aissaoui87@gmail.com</a></p>
           <p>📞 <a href="tel:+212618936313">+212 618 936 313</a></p>
-          <a href="https://github.com/IssamIdri" target="_blank" style="margin-right: 10px;"><img src="github.png" alt="Logo GitHub" /></a>
+          <a href="https://github.com/IssamIdri" target="_blank"><img src="github.png" alt="Logo GitHub" /></a>
           <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/" target="_blank"><img src="linkedin.png" alt="Logo LinkedIn" /></a>
         </div>
-        <div style="margin-top: 20px;">
-          <a href="#experience" class="btn" style="padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">🔍 Voir Expériences</a>
-          <a href="#contact" class="btn" style="padding: 10px 20px; border: 2px solid #1e90ff; color: #1e90ff; text-decoration: none; border-radius: 5px;">📨 Me Contacter</a>
+        <div class="hero-buttons">
+          <a href="#experience" class="btn-primary">🔍 Voir Expériences</a>
+          <a href="#contact" class="btn-outline">📨 Me Contacter</a>
         </div>
       </div>
-      <div>
-        <img src="alten.jpg" alt="Issam Photo" style="width: 280px; border-radius: 20px; border: 3px solid #1e90ff;" />
+      <div class="hero-photo">
+        <img src="issam.jpeg" alt="Issam Photo" />
       </div>
     </div>
   </header>
+  
 
   <section id="about">
     <h2>À propos</h2>
@@ -137,7 +135,7 @@
         <div class="tag-group">
           <span class="tag">Python</span>
           <span class="tag">Flask</span>
-          <span class="tag">MySQL</span>
+          <span class="tag">Machine Learning</span>
         </div>
       </div>
     </div>
@@ -173,9 +171,10 @@
           <li>⚙️ Mise en œuvre d’un plan de conception et de déploiement</li>
         </ul>
         <div class="tag-group">
-          <span class="tag">Python</span>
-          <span class="tag">Sklearn</span>
-          <span class="tag">Pandas</span>
+          <span class="tag">LAN/WAN</span>
+          <span class="tag">Frame-Relay</span>
+          <span class="tag">VPN</span>
+          <span class="tag">Cisco Packet Tracer</span>
         </div>
       </div>
     </div>
@@ -197,40 +196,49 @@
     <h2>Éducation</h2>
     <div class="education-timeline">
   
-      <div class="education-item">
-        <img src="esisa.jpg" alt="FSDM">
-        <div>
-          <h4>2023 – 2025</h4>
-          <p>Master en Ingénierie des Systèmes d’Information & IA – FSDM, Fès</p>
+      <div class="education-item left">
+        <div class="content-box">
+          <img src="esisa.jpg" alt="FSDM">
+          <div class="education-content">
+            <h4>2023 – 2025</h4>
+            <p>Master en Ingénierie des Systèmes d’Information & IA – ESISA, Fès</p>
+          </div>
         </div>
       </div>
   
-      <div class="education-item">
-        <img src="fsdm.png" alt="FSDM">
-        <div>
-          <h4>2020 – 2023</h4>
-          <p>Licence Fondamentale en Mathématiques & Informatique – FSDM, Fès</p>
+      <div class="education-item right">
+        <div class="content-box">
+          <img src="fsdm.png" alt="FSDM">
+          <div class="education-content">
+            <h4>2020 – 2023</h4>
+            <p>Licence Fondamentale en Mathématiques & Informatique – FSDM, Fès</p>
+          </div>
         </div>
       </div>
   
-      <div class="education-item">
-        <img src="est.png" alt="EST">
-        <div>
-          <h4>2018 – 2020</h4>
-          <p>DUT Réseaux et Télécommunications – EST, Fès</p>
+      <div class="education-item left">
+        <div class="content-box">
+          <img src="est.png" alt="EST">
+          <div class="education-content">
+            <h4>2018 – 2020</h4>
+            <p>DUT Réseaux et Télécommunications – EST, Fès</p>
+          </div>
         </div>
       </div>
   
-      <div class="education-item">
-        <img src="md.jpg" alt="Lycée Moulay Driss">
-        <div>
-          <h4>2017 – 2018</h4>
-          <p>Baccalauréat Sciences Mathématiques B – Lycée Moulay Driss, Fès</p>
+      <div class="education-item right">
+        <div class="content-box">
+          <img src="md.jpg" alt="Lycée Moulay Driss">
+          <div class="education-content">
+            <h4>2017 – 2018</h4>
+            <p>Baccalauréat Sciences Mathématiques B – Lycée Moulay Driss, Fès</p>
+          </div>
         </div>
       </div>
   
     </div>
   </section>
+  
   
   <section id="contact">
     <h2>Contact</h2>
