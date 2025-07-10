@@ -6,17 +6,33 @@
   <title>Portfolio Issam</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/png" href="information.png" />
 </head>
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    backToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
 <body>
   <nav>
-    <a href="CV ISSAM 2025 (1).pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
-    <div>
-      <a href="#about">À propos</a>
-      <a href="#experience">Expériences</a>
-      <a href="#projects">Projets</a>
-      <a href="#education">Éducation</a>
-      <a href="#contact">Contact</a>
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#experience">Expériences</a>
+        <a href="#projects">Projets</a>
+        <a href="#education">Éducation</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="CV_ISSAM_2025.pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
     </div>
   </nav>
   
@@ -32,10 +48,14 @@
           Détenteur d’un Master en Ingénierie des Systèmes d’Information et Intelligence Artificielle, je suis passionné par l’analyse prédictive, la gestion de données massives et le développement d’applications intelligentes. Mon parcours allie solides compétences en data science, développement full-stack et réseaux, que je mets au service de projets innovants mêlant IA, modélisation et automatisation.
         </p>
         <div class="contact-links">
-          <p>📧 <a href="mailto:issam.aissaoui87@gmail.com">issam.aissaoui87@gmail.com</a></p>
-          <p>📞 <a href="tel:+212618936313">+212 618 936 313</a></p>
-          <a href="https://github.com/IssamIdri" target="_blank"><img src="github.png" alt="Logo GitHub" /></a>
-          <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/" target="_blank"><img src="linkedin.png" alt="Logo LinkedIn" /></a>
+          <div class="info-block">
+            <p>📧 <a href="mailto:issam.aissaoui87@gmail.com">issam.aissaoui87@gmail.com</a></p>
+            <p>📞 <a href="tel:+212618936313">+212 618 936 313</a></p>
+          </div>
+          <div class="social-icons">
+            <a href="https://github.com/IssamIdri" target="_blank"><img src="github.png" alt="Logo GitHub" /></a>
+            <a href="https://www.linkedin.com/in/issam-aissaoui-idrissi-b14887198/" target="_blank"><img src="linkedin.png" alt="Logo LinkedIn" /></a>
+          </div>
         </div>
         <div class="hero-buttons">
           <a href="#experience" class="btn-primary">🔍 Voir Expériences</a>
@@ -49,13 +69,13 @@
   </header>
   
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>À propos</h2>
        <p>Détenteur d’un Master en Ingénierie des Systèmes d’Information et Intelligence Artificielle, je suis passionné par l’analyse prédictive, la gestion de données massives et le développement d’applications intelligentes. Mon parcours allie solides compétences en data science, développement full-stack et réseaux, que je mets au service de projets innovants mêlant IA, modélisation et automatisation.</p>
 
   </section>
 
-  <section id="experience">
+  <section id="experience" data-aos="fade-up">
     <h2>Expériences</h2>
   
     <div class="experience-item">
@@ -104,7 +124,7 @@
     </div>
   </section>
   
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projets</h2>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
       <div class="project-card" onclick="openModal('modal-fraude')">
@@ -192,7 +212,7 @@
   
   
 
-  <section id="education">
+  <section id="education" data-aos="fade-up">
     <h2>Éducation</h2>
     <div class="education-timeline">
   
@@ -240,7 +260,7 @@
   </section>
   
   
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
       
@@ -272,12 +292,16 @@
         </form>
       </div>
     </div>
+  
   </section>
-  
-  
+  <button id="backToTop" title="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <footer>
     &copy; 2025 AISSAOUI IDRISSI ISSAM -- Tous droits réservés.
   </footer>
+
+
 </body>
 </html>
