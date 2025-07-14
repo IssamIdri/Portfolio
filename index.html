@@ -32,7 +32,7 @@
         <a href="#education">Éducation</a>
         <a href="#contact">Contact</a>
       </div>
-      <a href="CV_ISSAM_2025.pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
+      <a href="CV ISSAM 2025 (1).pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
     </div>
   </nav>
   
@@ -85,7 +85,10 @@
         <p>Février – Août 2025</p>
         <ul>
           <li>Développement Python et automatisation du traitement des tickets</li>
+          <p>Conception et automatisation de scripts Python pour l’analyse, le tri et la classification des tickets .
+            Création d’une interface web avec Flask, intégrant le traitement des fichiers Excel, la recherche dynamique, et un tableau de bord interactif pour le suivi des décisions.</p>
           <li>Expérimentation de modèles de traitement du langage naturel (NLP)</li>
+          <p>Expérimentation du modèle Flan-T5 pour la prédiction automatisée des cas ambigus non gérables par règles fixes, avec amélioration du traitement intelligent des tickets via NLP supervisé.</p>
         </ul>
       </div>
       <div class="experience-logo">
@@ -114,8 +117,8 @@
         <p><strong>Stage de Fin d’Études · Fès</strong></p>
         <p>Avril – Juin 2020</p>
         <ul>
-          <li>Gestion de salles informatiques via NetSupport School</li>
-          <li>Administration réseau et routage inter-VLAN</li>
+          <li>En tant que stagiaire à l'École Supérieure de Technologie de Fès, j'ai eu l'opportunité de participer à la gestion et à la supervision des salles informatiques. En utilisant le logiciel Net Support School, j'ai assuré une utilisation optimale des ressources informatiques tout en veillant à la fluidité des opérations. Cette expérience m'a permis de renforcer mes compétences en gestion de réseaux et en administration des systèmes, tout en contribuant au bon fonctionnement de l'infrastructure informatique de l'établissement.</li>
+   
         </ul>
       </div>
       <div class="experience-logo">
@@ -131,13 +134,17 @@
         <img src="fraude.png" alt="Fraude" style="width: 100%; border-radius: 10px;">
         <h3>Détection de Fraude par Carte de Crédit</h3>
       </div>
+      <div class="project-card" onclick="openModal('modal-cancer')">
+        <img src="cancer.png" alt="Cancer" style="width: 100%; border-radius: 10px;">
+        <h3>Interface de Prédiction de survie de Cancer du sein</h3>
+      </div>
+      <div class="project-card" onclick="openModal('modal-enseignement')">
+        <img src="enseignement.png" alt="enseigenement" style="width: 100%; border-radius: 10px;">
+        <h3>Système d’aide à la prise de décision dans le domaine de l’enseignement à distance</h3>
+      </div>
       <div class="project-card" onclick="openModal('modal-reseau')">
         <img src="reseau.png" alt="Reseau" style="width: 100%; border-radius: 10px;">
         <h3>Mise en place de réseaux LAN redondants</h3>
-      </div>
-      <div class="project-card" onclick="openModal('modal-cancer')">
-        <img src="cancer.png" alt="Cancer" style="width: 100%; border-radius: 10px;">
-        <h3>SEED Breast Cancer Prédiction Application</h3>
       </div>
     </div>
   </div>
@@ -163,7 +170,7 @@
     <div id="modal-cancer" class="modal">
       <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
         <span class="close" onclick="closeModal('modal-cancer')">&times;</span>
-        <h3>SEED Breast Cancer Prédiction Application</h3>
+        <h3>Interface de Prédiction de survie de Cancer du sein</h3>
         <p>Nous avons développé SEED Breast Cancer Prediction, une application innovante basée sur des technologies modernes d’intelligence artificielle et d’apprentissage automatique, visant à prédire le risque de cancer du sein ou à détecter des cas potentiels.</p>
         <ul>
           <li>📌 Soutenir les professionnels de la santé dans les diagnostics précoces</li>
@@ -178,8 +185,7 @@
           <span class="tag">Data Science</span></div>
       </div>
     </div>
-  
-  
+    <!---Modal Reseau -->
     <div id="modal-reseau" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal-reseau')">&times;</span>
@@ -198,7 +204,27 @@
         </div>
       </div>
     </div>
-
+    <!--Modal enseignement a distance-->
+    <div id="modal-enseignement" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-enseignement')">&times;</span>
+        <h3>Système d’aide à la prise de décision dans le domaine de l’enseignement à distance</h3>
+        <p>
+          Ce projet a pour objectif de développer une application intelligente capable d’évaluer l’adaptabilité d’un étudiant à l’enseignement à distance. Grâce à un formulaire dynamique, le système recueille des données personnelles, pédagogiques et techniques (connexion, outils, niveau informatique...) afin de prédire, via un modèle de <strong>Machine Learning</strong> (Random Forest), le niveau d’aisance de l’étudiant avec l’apprentissage en ligne.
+          </p>
+          <p>
+          En plus d’un tableau de bord statistique et d’un chatbot interactif, le système propose des recommandations personnalisées, des conseils d’adaptation et une analyse visuelle complète pour les décideurs pédagogiques. L’objectif final est de <strong>favoriser la réussite des étudiants</strong> en adaptant les ressources à leurs besoins.
+          </p>
+          <div class="tag-group">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">React</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">Power BI</span>
+          </div>
+      </div>
+    </div>
   
     <script>
       function openModal(id) {
