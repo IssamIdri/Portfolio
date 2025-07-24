@@ -520,6 +520,11 @@ a:hover {
   margin-bottom: 8px;
 }
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
 
 /* ========== MODAL ========== */
 .modal {
@@ -590,12 +595,26 @@ footer {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
-  header h1 { font-size: 2em; }
-  header h2 { font-size: 1.5em; }
+  header .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-photo img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
 
   nav {
     flex-direction: column;
-    align-items: center;
+    padding: 10px;
   }
 
   nav > div:nth-child(2) {
@@ -603,83 +622,29 @@ footer {
     align-items: center;
   }
 
-  section {
-    padding: 60px 10px;
+  .skills-container {
+    grid-template-columns: 1fr;
   }
 
-  .hero-text {
-    text-align: center;
-  }
-
-  .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-primary,
-  .btn-outline {
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .education-item,
-  .education-item.left,
-  .education-item.right {
+  .education-item {
     width: 100%;
     left: 0;
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 
-  .education-item.right .content-box,
-  .education-item.left .content-box {
-    flex-direction: row;
-    text-align: left;
+  .education-item .content-box {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .education-item.right .education-content {
-    text-align: left;
+  #contact form {
+    width: 100%;
   }
 
-  .education-timeline::before {
-    left: 20px;
-  }
-
-  #contact > div {
-    width: 100% !important;
+  #topBtn {
+    right: 10px;
+    bottom: 10px;
+    padding: 10px 12px;
   }
 }
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
-  background-color: #1e90ff;
-  color: white;
-  font-size: 1.2em;
-  padding: 12px 14px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  transition: background-color 0.3s, transform 0.3s;
-}
 
-#backToTop:hover {
-  background-color: #00bfff;
-  transform: scale(1.1);
-}
-
-#backToTop i {
-  pointer-events: none;
-}
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* format 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-top: 20px;
-}
