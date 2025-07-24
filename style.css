@@ -439,6 +439,87 @@ a:hover {
 #contact button[type="submit"]:hover {
   background-color: #1c6dbe;
 }
+/* ========== SKILLS ========== */
+#skills {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 80px 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#skills h2 {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.skill-block.dev {
+  background-image: url('dev.jpg');
+}
+
+.skill-block.data {
+  background-image: url('data.png');
+}
+
+.skill-block.BI {
+  background-image: url('bi.png');
+}
+
+.skill-block.methodologie {
+  background-image: url('network.jpg');
+}
+
+.skill-block {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Couche sombre */
+  z-index: 1;
+}
+
+.skill-block h4,
+.skill-block ul,
+.skill-block li {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.skill-block i {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.skill-block ul {
+  list-style-type: "✔ ";
+  padding-left: 20px;
+  color: #333;
+}
+
+.skill-block li {
+  margin-bottom: 8px;
+}
+
 
 /* ========== MODAL ========== */
 .modal {
@@ -475,6 +556,25 @@ a:hover {
   font-size: 28px;
   color: black;
   cursor: pointer;
+}
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.modal-gallery img:hover {
+  transform: scale(1.05);
+  cursor: zoom-in;
 }
 
 /* ========== FOOTER ========== */
