@@ -541,12 +541,16 @@ a:hover {
 
 .modal-content {
   background: #bee0e8;
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
   width: 90%;
-  max-width: 600px;
+  max-width: 700px;
   color: #030303;
   text-align: left;
+  max-height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  position: relative;
 }
 .modal-image {
   width: 100%;
@@ -601,15 +605,19 @@ footer {
   }
 
   .hero-photo img {
-    width: 80%;
-    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 20px;
   }
 
-  .btn-primary,
-  .btn-outline {
-    display: block;
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
     width: 100%;
-    margin: 10px auto;
+    margin: 5px 0;
+    text-align: center;
   }
 
   nav {
@@ -619,32 +627,39 @@ footer {
 
   nav > div:nth-child(2) {
     flex-direction: column;
+    gap: 10px;
     align-items: center;
   }
 
-  .skills-container {
-    grid-template-columns: 1fr;
+  .project-card h3,
+  .modal-content h3 {
+    font-size: 1.2em;
   }
 
-  .education-item {
-    width: 100%;
-    left: 0;
-    padding: 10px 15px;
+  section {
+    padding: 50px 10px;
+    margin: 20px 10px;
   }
 
-  .education-item .content-box {
-    flex-direction: column;
-    text-align: center;
+  .skill-block {
+    padding: 15px;
+    font-size: 0.95em;
   }
 
-  #contact form {
-    width: 100%;
+  .modal-content {
+    width: 95%;
+    padding: 20px;
   }
 
-  #topBtn {
-    right: 10px;
-    bottom: 10px;
-    padding: 10px 12px;
+  .modal-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+
+  footer {
+    font-size: 0.85em;
   }
 }
+
 
