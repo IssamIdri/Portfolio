@@ -6,7 +6,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background: url("bg.jpg") center/cover no-repeat fixed;
+  background: url("images/bg.jpg") center/cover no-repeat fixed;
   color: #222;
   scroll-behavior: smooth;
 }
@@ -464,19 +464,19 @@ a:hover {
   gap: 30px;
 }
 .skill-block.dev {
-  background-image: url('dev.jpg');
+  background-image: url('images/dev.jpg');
 }
 
 .skill-block.data {
-  background-image: url('data.png');
+  background-image: url('images/data.png');
 }
 
 .skill-block.BI {
-  background-image: url('bi.jpg');
+  background-image: url('images/bi.jpg');
 }
 
 .skill-block.methodologie {
-  background-image: url('network.jpg');
+  background-image: url('images/network.jpg');
 }
 
 .skill-block {
