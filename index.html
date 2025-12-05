@@ -32,7 +32,7 @@
         <a href="#education">Éducation</a>
         <a href="#contact">Contact</a>
       </div>
-      <a href="cv/CV ISSAM.pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
+      <a href="cv/CV_ISSAM.pdf" target="_blank" class="cv-button">📄 Télécharger mon CV</a>
     </div>
   </nav>
   
@@ -184,8 +184,8 @@
         <h3>Système d’aide à la prise de décision dans le domaine de l’enseignement à distance</h3>
       </div>
       <div class="project-card" onclick="openModal('modal-reseau')">
-        <img src="images/reseau.png" alt="Reseau" style="width: 100%; border-radius: 10px;">
-        <h3>Mise en place de réseaux LAN redondants</h3>
+        <img src="images/index.png" alt="Reseau" style="width: 100%; border-radius: 10px;">
+        <h3>TextScope — Moteur d’indexation et de recherche intelligente de documents</h3>
       </div>
     </div>
   </div>
@@ -231,20 +231,38 @@
     <div id="modal-reseau" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('modal-reseau')">&times;</span>
-        <h3>Mise en place de réseaux LAN redondants</h3>
-        <p>Ce projet de fin d’étude consistait à modéliser une architecture réseau LAN/WAN optimale avec redondance :</p>
+        <h3>TextScope — Moteur d’indexation et de recherche intelligente de documents</h3>
+        <p>
+          TextScope est une application web avancée permettant 
+          d’<strong>indexer automatiquement</strong> un dossier complet de documents 
+          (.pdf, .docx, .txt, .html) afin d’offrir une 
+          <strong>exploration intelligente du contenu textuel</strong>.
+          Le système utilise des techniques de <strong>traitement automatique du langage</strong> 
+          pour nettoyer, normaliser, lemmatiser et analyser les textes, avant de 
+          générer un moteur de recherche performant avec surlignage et statistiques.
+        </p>
+
+        <h4>Fonctionnalités principales</h4>
         <ul>
-          <li>📐 Maquettage du réseau cible avec interconnexions LAN/WAN</li>
-          <li>🧰 Étude de la topologie, des contraintes et de la sécurité</li>
-          <li>⚙️ Mise en œuvre d’un plan de conception et de déploiement</li>
+          <li>📁 Indexation automatique d’un corpus multi-formats</li>
+          <li>🧠 Nettoyage linguistique : stop-words, normalisation, lemmatisation FR/EN</li>
+          <li>🔍 Moteur de recherche par mots-clés avec surlignage contextuel dynamique</li>
+          <li>📊 Calcul des fréquences lexicales et TF-IDF par document</li>
+          <li>☁️ Génération de nuages de mots interactifs</li>
+          <li>🗂️ Interface séparée : espace Admin (indexation + statistiques) / espace Utilisateur (recherche)</li>
+          <li>⚙️ Architecture robuste basée sur Flask + SQLite</li>
         </ul>
-        <img src="images/archi_cisco.png" alt="Architecture réseau" class="modal-image">
-        <div class="tag-group">
-          <span class="tag">LAN/WAN</span>
-          <span class="tag">Frame-Relay</span>
-          <span class="tag">VPN</span>
-          <span class="tag">Cisco Packet Tracer</span>
-        </div>
+        <img src="images/index.png" alt="Architecture réseau" class="modal-image">
+       <div class="tag-group">
+          <span class="tag">Flask</span>
+          <span class="tag">Python</span>
+          <span class="tag">TAL / NLP</span>
+          <span class="tag">spaCy</span>
+          <span class="tag">PDF / DOCX Parsing</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">WordCloud</span>
+          <span class="tag">Interface Web</span>
+      </div>
       </div>
     </div>
     <!--Modal enseignement a distance-->
